@@ -1,6 +1,5 @@
 * {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 15px;
 }
 
 h1 {
@@ -29,9 +28,9 @@ body {
 /* images */
 .profile {
   display: inline-block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 .top-buffer {
@@ -102,4 +101,8 @@ body {
 
 .bold {
   font-weight: bold;
+}
+
+td {
+  padding: 2px;
 }

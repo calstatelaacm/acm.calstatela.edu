@@ -6,9 +6,30 @@
   <title>Cal State LA ACM</title>
   <link rel="icon" type="image/png" href="img/eagle-icon.png">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/navbar.css">
+  <script type="text/javascript" src="js/instafeed.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<style type="text/css">
+.carousel{
+    background: ghostwhite;
+    margin: 20px 0;
+    
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.control-buttons{
+	text-align: center;
+}
+.bs-example{
+	margin: 20px;
+}
+</style>
+  
 </head>
 <body>
   
@@ -98,6 +119,37 @@
         </div>      
         
       </div>
+    </div>
+    <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '1055527561',
+        sortBy: 'most-recent',
+        limit: '10',
+        accessToken: '31031827.1677ed0.fc9ff87e781041e48fad22b2a9b15195',
+        resolution: "low_resolution",
+        template: '<div class="item"><a href="{{link}}"><img src="{{image}}"/></a><center class="hidden-xs">{{caption}}</center></div>',
+        after: function () {
+            $('#instafeed > div:nth-child(1)').addClass('active');
+        }
+    });
+    feed.run();
+</script>
+    
+    <div class="bs-example">
+      
+        <div id="myCarousel" class="carousel slide"  data-ride="carousel">
+            <div class="carousel-inner" role="listbox" interval="200" id="instafeed">
+            </div>
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+        </div>
     </div>
     
   </div>

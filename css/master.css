@@ -106,3 +106,18 @@ body {
 td {
   padding: 2px;
 }
+
+ .carousel{
+          
+          margin: 20px 0;
+          
+      }
+ .carousel .item img{
+          margin: 0 auto; /* Align slide image horizontally center */
+      }
+  .control-buttons{
+        text-align: center;
+      }
+  .instagram{
+        margin: 20px;
+      }

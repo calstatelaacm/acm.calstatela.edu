@@ -5,21 +5,16 @@
   <meta name="keywords" content="Cal State LA, ACM, Computer Science, CS, Programming, Hackathon, CSULA, Cal State LA"/>
   <title>Cal State LA ACM</title>
   <link rel="icon" type="image/png" href="img/eagle-icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400, 700" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/navbar.css">
   <script type="text/javascript" src="js/instafeed.min.js"></script>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   
 </head>
 <body>
-  
   <!-- begin navbar -->
   <nav class="navbar navbar-custom navbar-fixed-top">
     <div class="container">
@@ -41,16 +36,21 @@
         <ul class="nav navbar-nav">
           <li class="active-tab"><a href="index.html">Home</a></li>
           <li><a href="pages/calendar.html">Calendar</a></li>        
-          <li><a href="pages/workshops.html">Workshops</a></li>
-          <li><a href="pages/events.html">Events</a></li>
-          <li></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../pages/general_events.html">General Events</a></li>
+              <li><a href="../pages/workshops.html">Workhops</a></li>
+              <li><a href="../pages/hackathons.html">Hackathons</a></li>
+            </ul>
+          </li>
           <li><a href="pages/tutoring.html">Tutoring</a></li>
           
-          <li>
+          <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Officers<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="../pages/officers.html" style="color:rgba(255,255,255,1.00)">Current</a></li>
-              <li><a href="past_officers.html" style="color:rgba(255,255,255,1.00)">Hall of Fame</a></li>
+              <li><a href="../pages/past_officers.html" style="color:rgba(255,255,255,1.00)">Hall of Fame</a></li>
             </ul>
           </li>
           
@@ -88,7 +88,7 @@
             Meetings:
           </div>
           <div class="col-xs-5 col-md-7 col-lg-9">
-            <p> <i><u>First Meeting</u></i> </p><p>Tuesday Aug 30 at 3:15pm In Room E&T A210.</p>
+            <p>Tuesdays &nbsp;at 3:15pm In Room E&amp;T A210.</p>
           </div>
         </div>
 <!---------------------- END Quarter Meetings ----------------------------->        
@@ -174,5 +174,7 @@
   ga('send', 'pageview');
 
   </script>
+  
+  
 </body>
 </html>

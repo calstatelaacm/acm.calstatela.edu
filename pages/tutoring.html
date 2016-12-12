@@ -6,7 +6,7 @@
   <title>Cal State LA ACM</title>
   <link rel="icon" type="image/png" href="../img/eagle-icon.png">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400, 700" rel="stylesheet" type="text/css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/master.css">
   <link rel="stylesheet" href="../css/navbar.css">
 </head>
@@ -33,9 +33,14 @@
         <ul class="nav navbar-nav">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../pages/calendar.html">Calendar</a></li>
-          <li><a href="workshops.html">Workshops</a></li>
-          <li><a href="../pages/events.html">Events</a></li>
-          <li></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../pages/general_events.html">General Events</a></li>
+              <li><a href="../pages/workshops.html">Workhops</a></li>
+              <li><a href="../pages/hackathons.html">Hackathons</a></li>
+            </ul>
+          </li>
           <li class="active-tab"><a href="../pages/tutoring.html">Tutoring</a></li>
           
           <li class="dropdown">
@@ -80,8 +85,6 @@
             <h4>Danny Padilla:</h4>
             <p>Monday: 4:00pm - 6:00pm</p>
             <p>Tuesday &amp; Thurdsay: 12:00pm - 3:00pm</p>
-            <p>Wednesday: 5:00pm - 6:00pm</p>
-            <p>Friday: 3:00pm - 5:00pm</p>
             <h4>Alfredo Aleman</h4>
             <p>Tueday &amp; Thurdsay: 10:00am - 2:00pm </p>
             
@@ -89,8 +92,7 @@
           <div class="col-md-6">
           <p>
           <h3>Tutors: Alfredo &amp; Danny</h3>
-          <p>Room: 310(CS Senoir Design) </p>
-          <p>or B10(Out of elevators to the right)</p>
+          <p><strong>Room:</strong> B10 (Basement, out of elevators to the right)</p>
           </p>
           </div>
         </div>

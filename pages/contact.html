@@ -33,9 +33,14 @@
         <ul class="nav navbar-nav">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../pages/calendar.html">Calendar</a></li>
-          <li><a href="workshops.html">Workshops</a></li>
-          <li><a href="../pages/events.html">Events</a></li>
-          <li></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../pages/general_events.html">General Events</a></li>
+              <li><a href="../pages/workshops.html">Workhops</a></li>
+              <li><a href="../pages/hackathons.html">Hackathons</a></li>
+            </ul>
+          </li>
           <li><a href="../pages/tutoring.html">Tutoring</a></li>
           
           <li class="dropdown">
@@ -117,17 +122,15 @@
   <!-- /body -->
 
   <!-- begin footer -->
-  <div class="container bottom center">
-    <div class="row">
-      <div class="col-xs-*">
+  <footer class="footer">
+    <div class="container">
         <div class="hr"></div>
         <p class="text-center footer-text">
           Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by the members of Cal State LA Association for Computing Machinery <br>
           &copy; 2015 Cal State LA ACM. All rights reserved.
         </p>
-      </div>
     </div>
-  </div>
+  </footer>
   <!-- end footer -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
